@@ -23,6 +23,7 @@ jobs:
         pip install tensorflow
         pip install numpy
         pip install matplotlib
+        pip install scipy
 
     - name: Train model
       run: python train_model.py
