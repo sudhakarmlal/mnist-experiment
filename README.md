@@ -1,5 +1,3 @@
-# mnist-experiment
-
 # MNIST Model Training and Testing
 
 This project contains two main scripts: `train_model.py` for training a convolutional neural network (CNN) on the MNIST dataset, and `test_model.py` for evaluating the trained model.
