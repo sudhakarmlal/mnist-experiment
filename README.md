@@ -1,5 +1,7 @@
 
-![example workflow](https://github.com/sudhakarmlal/mnist-experiment/blob/main/.github/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/sudhakarmlal/mnist-experiment/blob/main/.github/workflows/main.yml/badge.svg?branch=main)
+
+
 # MNIST Model Training and Testing
 
 This project contains two main scripts: `train_model.py` for training a convolutional neural network (CNN) on the MNIST dataset, and `test_model.py` for evaluating the trained model.
