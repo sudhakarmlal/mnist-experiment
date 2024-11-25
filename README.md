@@ -1,5 +1,5 @@
 
-![example workflow](https://github.com/sudhakarmlal/mnist-experiment/blob/main/.github/workflows/main.yml/badge.svg?branch=main)
+![example workflow](https://github.com/sudhakarmlal/mnist-experiment/actions/workflows/main.yml/badge.svg?event=push)
 
 
 # MNIST Model Training and Testing
