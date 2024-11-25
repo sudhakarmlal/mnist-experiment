@@ -15,7 +15,7 @@ x_test = x_test.reshape((10000, 28, 28, 1)).astype('float32') / 255
 model = models.Sequential([
     layers.Conv2D(16, (3, 3), activation='relu', input_shape=(28, 28, 1)),  # 16 filters
     layers.BatchNormalization(),  # Added Batch Normalization
-    layers.Dropout(0.1),  # Changed to Dropout
+    #layers.Dropout(0.1),  # Changed to Dropout
     layers.MaxPooling2D((2, 2)),
     layers.Conv2D(16, (3, 3), activation='relu'),  # 16 filters
     layers.BatchNormalization(),  # Added Batch Normalization
