@@ -24,7 +24,7 @@ model = models.Sequential([
     layers.Conv2D(16, (1, 1), activation='relu'),  # Added 1x1 convolution
     layers.BatchNormalization(),  # Added Batch Normalization
     layers.Flatten(),
-    layers.Dense(48, activation='relu'),  # 64 units
+    layers.Dense(32, activation='relu'),  # 64 units
     layers.Dense(10, activation='softmax')  # Output layer for 10 classes
 ])
 
