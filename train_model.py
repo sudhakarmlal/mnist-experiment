@@ -33,6 +33,7 @@ print(model.count_params())
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # Train the model for 1 epoch
+print("ModelLayers:::",model.layers)
 model.fit(x_train, y_train, epochs=1, validation_data=(x_test, y_test))
 
 # Save the model with a timestamp
