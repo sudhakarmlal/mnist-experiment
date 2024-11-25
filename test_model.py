@@ -8,7 +8,7 @@ def test_model():
     print(model.count_params())
 
     # Test 1: Check number of parameters
-    assert model.count_params() < 25000, "Model has more than 250000 parameters"
+    assert model.count_params() < 25000, "Model has more than 25000 parameters"
 
     # Test 2: Check input shape
     assert model.input_shape == (None, 28, 28, 1), "Model does not accept 28x28 input"
@@ -21,9 +21,15 @@ def test_model():
     x_train = x_train.reshape((60000, 28, 28, 1)).astype('float32') / 255
     x_test = x_test.reshape((10000, 28, 28, 1)).astype('float32') / 255
 
-# Build the model with fewer than 25,000 parameters
+    # Evaluate the model
     _, accuracy = model.evaluate(x_test, y_test)
     assert accuracy > 0.95, "Model accuracy is less than 95%"
+
+    # Test 5: Check number of layers
+    assert len(model.layers) < 30, "Model does not have more than 3 layers"
+
+    # Test 6: Check number of test images
+    assert x_test.shape[0] == 10000, "Test set does not have 10000 images"
 
 if __name__ == "__main__":
     test_model()
