@@ -65,4 +65,4 @@ model.fit(datagen.flow(x_train, y_train, batch_size=32), epochs=1, validation_da
 
 # Save the model with a timestamp
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-model.save(f'model_latest.h5')
+model.save(f'model_latest_aug.h5')
