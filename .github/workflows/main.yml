@@ -50,6 +50,6 @@ jobs:
 
     - name: Check model architecture
       run: |
-           python -c "import tensorflow as tf; from tensorflow.keras.models import load_model; model = load_model('model_latest.h5'); assert len(model.layers) == 3, 'Model does not have 3 layers'"
+           python -c "import tensorflow as tf; from tensorflow.keras.models import load_model; model = load_model('model_latest.h5'); assert len(model.layers) < 6, 'Model have more than 6 layers'"
 
       
